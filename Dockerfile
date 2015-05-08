@@ -1,5 +1,6 @@
 FROM        debian:8.0
 MAINTAINER  andystanton
+ENV         LANG C.UTF-8
 RUN         apt-get update -y -qq && \
             apt-get install -y patch racket && \
             apt-get clean && \
